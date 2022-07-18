@@ -1,0 +1,15 @@
+{
+    "name": "Jessica ~In Happy Mountain~",
+    "short_name": "Jessica",
+    "start_url": "/happymountain/",
+    "display": "standalone",
+    "background_color": "#384D98",
+    "description": "ジェシカ、降臨。",
+    "icons": [
+        {
+            "src": "/happymountain/icon.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ]
+}

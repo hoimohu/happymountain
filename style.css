@@ -1,0 +1,38 @@
+html,
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("/happymountain/src/img/background.png");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+}
+
+.wideheight {
+    width: 100vw;
+    height: calc(100vw / 4 * 3);
+}
+
+.widewidth {
+    width: calc(100vh / 3 * 4);
+    height: 100vh;
+}
+
+.download {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: aquamarine;
+}
+
+#fileinput {
+    position: fixed;
+    top: 2em;
+    left: 0px;
+    color: white;
+}
