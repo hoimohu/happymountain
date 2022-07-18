@@ -122,40 +122,19 @@ class enemy extends character {
                         new enemyshot(this.x, this.y, SHOT_BIG_WIDTH, SHOT_BIG_HEIGHT, SHOT_BIG_SPEED, [this.x + STAGE_WIDTH / 3, STAGE_HEIGHT], SHOT_BOSS1_IMG, this.gamecanvas)
                     ];
                 } else {
-                    const result = [];
-                    const arg = Math.floor(Math.random() * 10);
-                    if (arg !== 0) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [SHOT_NORMAL_WIDTH / 2, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 1) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 2) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 2, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 3) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 3, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 4) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 4, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 5) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 5, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 6) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 6, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 7) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 7, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 8) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 8, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    if (arg !== 9) {
-                        result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 9, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    }
-                    result.push(new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH - SHOT_NORMAL_WIDTH / 2, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas));
-                    return result;
+                    return [
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [SHOT_NORMAL_WIDTH / 2, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 2, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 3, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 4, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 5, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 6, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 7, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 8, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH / 10 * 9, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas),
+                        new enemyshot(this.x, this.y, SHOT_NORMAL_WIDTH, SHOT_NORMAL_HEIGHT, SHOT_NORMAL_SPEED, [STAGE_WIDTH - SHOT_NORMAL_WIDTH / 2, STAGE_HEIGHT / 2], SHOT_BOSS1_IMG, this.gamecanvas)
+                    ];
                 }
             case 'boss2':
                 if (this.form === 0) {
